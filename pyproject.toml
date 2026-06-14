@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openai-compressor"
+version = "0.1.0"
+description = "Auto-compress prompts for OpenAI API calls with zero GPU dependency"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Eko Solar Ops"}]
+keywords = ["openai", "llm", "compression", "prompt", "tokens"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "openai>=1.0.0",
+    "tiktoken",
+]
+
+[project.optional-dependencies]
+fastapi = ["fastapi", "uvicorn"]
+llmlingua = ["llmlingua", "torch"]
+semantic = ["sentence-transformers>=2.0.0"]
+dev = ["pytest", "pytest-asyncio"]
+all = ["fastapi", "uvicorn", "llmlingua", "torch", "sentence-transformers>=2.0.0"]
+
+[project.scripts]
+openai-compressor-benchmark = "openai_compressor.benchmark:main"
+
+[project.urls]
+Homepage = "https://github.com/ekosolarize/openai-compressor"
+Repository = "https://github.com/ekosolarize/openai-compressor"

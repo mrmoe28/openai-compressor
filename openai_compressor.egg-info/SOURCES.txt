@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.py
+openai_compressor/__init__.py
+openai_compressor/benchmark.py
+openai_compressor/core.py
+openai_compressor/helpers.py
+openai_compressor/middleware.py
+openai_compressor/semantic.py
+openai_compressor/wrappers.py
+openai_compressor.egg-info/PKG-INFO
+openai_compressor.egg-info/SOURCES.txt
+openai_compressor.egg-info/dependency_links.txt
+openai_compressor.egg-info/entry_points.txt
+openai_compressor.egg-info/requires.txt
+openai_compressor.egg-info/top_level.txt

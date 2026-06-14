@@ -1,2 +1,0 @@
-[console_scripts]
-openai-compressor-benchmark = openai_compressor.benchmark:main
